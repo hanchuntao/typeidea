@@ -12,7 +12,7 @@ class Link(models.Model):
     )
 
     title = models.CharField(max_length=25, verbose_name="标题")
-    herf = models.URLField(verbose_name="链接")
+    href = models.URLField(verbose_name="链接")
     status = models.PositiveIntegerField(
         default=STATUS_NORMAL,
         choices=STATUS_ITEMS,
@@ -43,11 +43,11 @@ class SideBar(models.Model):
         (4, '最近评论'),
     )
 
-    name = models.CharField(max_length=50, verbose_name="名称")
+    title = models.CharField(max_length=50, verbose_name="标题")
     display_type = models.PositiveIntegerField(
         default=1,
         choices=SIDE_TYPE,
-        verbose_name='展未类型',
+        verbose_name='展示类型',
     )
     content = models.TextField(
         max_length=500,
@@ -64,3 +64,6 @@ class SideBar(models.Model):
 
     class Meta:
         verbose_name = verbose_name_plural = '侧边栏'
+
+    def __str__(self):
+        return self.title
