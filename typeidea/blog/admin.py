@@ -70,7 +70,7 @@ class TagAdmin(BaseOwnerAdmin):
 @admin.register(Post, site=custom_site)
 class PostAdmin(BaseOwnerAdmin):
     list_display = ('title', 'category', 'status',
-                    'created_time', 'operator', 'owner'
+                    'created_time', 'operator', 'owner','pv'
                     )
     list_display_links = []
 
