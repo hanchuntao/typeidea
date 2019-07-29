@@ -25,6 +25,7 @@
             <p class="card-text">{{ post.desc }}<a href="{% url 'post-detail' post.id %}">完整内容</a></p>
       </div>
     </div>
+
     {% endfor %}
     {% if page_obj %}
         {% if page_obj.has_previous %}
