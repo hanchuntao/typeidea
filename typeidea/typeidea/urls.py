@@ -21,6 +21,7 @@ from blog.views import (
     TagView, SearchView, AuthorView
 )
 from config.views import ListView
+from comment.views import CommentView
 from typeidea.custom_site import custom_site
 
 urlpatterns = [
@@ -32,5 +33,6 @@ urlpatterns = [
     path('super_admin/', admin.site.urls, name='super-admin'),
     path('admin/', custom_site.urls, name='admin'),
     path('search/', SearchView.as_view(), name='search'),
-    path('author/<int:owner_id>/', AuthorView.as_view(), name='author')
+    path('author/<int:owner_id>/', AuthorView.as_view(), name='author'),
+    path('comment/', CommentView.as_view(), name='comment'),
 ]
