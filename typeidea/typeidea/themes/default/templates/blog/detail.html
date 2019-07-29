@@ -12,11 +12,4 @@
     <hr />
     <p>{{ post.content }}</p>
     {% endif %}
-
-    <hr />
-    <div>底部分类
-        {% for cate in categories %}
-        <a href="{% url 'category-list' cate.id %}">{{cate.name}}</a>
-        {% endfor %}
-    </div>
 {% endblock %}

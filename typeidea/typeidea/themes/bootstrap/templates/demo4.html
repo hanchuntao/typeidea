@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+    <title>title</title>
+    <meta charset="UTF-8">
+    <style>
+        body,td,th {
+            font-size: 12px;
+            color: #0f54c3;
+        }
+        body {
+            margin-left: 5px;
+            margin-top: 10px;
+            margin-right: 10px;
+            margin-bottom: 5px;
+        }
+        a:link {
+            color: #0f54c3;
+            text-decoration: none;
+        }
+        a:visited {
+            text-decoration: none;
+            color: #CC0000;
+        }
+        a:hover {
+            text-decoration: underline;
+            color: #FF00FF;
+        }
+        a:active {
+            text-decoration: none;
+            color: #3366FF;
+        }
+
+        #header {
+            height: 60px;
+            width: 814px;
+            border: 1px solid #0f54c3;
+        }
+
+        #logo {
+            float:left;
+            height: 60px;
+            width: 200px;
+            background:url(./21.jpeg) no-repeat left top;
+        }
+        #advertisment {
+            float: left;
+            height: 56px;
+            width: 500px;
+            margin:1px;
+            border: 1px solid #0f54c3;
+        }
+        #appendix {
+            width:100px;
+            height:60px;
+            float: right;
+            text-align:right;
+        }
+        #appendix p {
+            margin:3px;
+        }
+        #menu {
+            border: 1px solid #0F54C3;
+            padding:5px;
+            margin:0px;
+            width:804px;
+            margin:1px 0px;
+            height: 12px;
+        }
+        #menu li {
+            float:left;
+            padding-left:10px;
+            padding-right:10px;
+            border-right-width: 1px;
+            border-right-style: solid;
+            border-right-color: #0F54C3;
+        }
+        #menu .lastMenuItem {
+            border-right-style:none;
+        }
+        #loginView {
+            border: 1px solid #0F54C3;
+            width: 280px;
+            margin:1px 0px;
+        }
+        #catalog {
+            border: 1px solid #0F54C3;
+            width:280px;
+            margin:1px 0px;
+        }
+        #search {
+            width: 280px;
+            border: 1px solid #0F54C3;
+            margin:1px 0px;
+        }
+        #newReply {
+            width: 280px;
+            border: 1px solid #0F54C3;
+            margin:1px 0px;
+        }
+        #hotTopics {
+            width: 280px;
+            border: 1px solid #0F54C3;
+            margin:1px 0px;
+        }
+        #statistics {
+            width: 280px;
+            border: 1px solid #0F54C3;
+            margin:1px 0px;
+        }
+        #hotGroups {
+            width: 280px;
+            border: 1px solid #0F54C3;
+            margin:1px 0px;
+        }
+        #hotUsers {
+            border: 1px solid #0F54C3;
+            width: 280px;
+            margin:1px 0px;
+        }
+        #footer {
+            width: 814px;
+            border: 1px solid #0F54C3;
+            margin:1px 0px;
+        }
+        #newTopics {
+            position: absolute;
+            height: 279px;
+            width: 531px;
+            left: 288px;
+            top: 100px;
+            border: 1px solid #0F54C3;
+        }
+        h3 {
+            border-bottom-width: 2px;
+            border-bottom-style: solid;
+            border-bottom-color: #0F54C3;
+            padding-top: 5px;
+            padding-right: 5px;
+            padding-bottom: 5px;
+            padding-left: 15px;
+            margin: 0px;
+            font-size: 10.5pt;
+        }
+        #loginView p {
+            margin:3px;
+            text-align:center;
+        }
+        #loginView form {
+            margin:0px;
+        }
+        .textInput {
+            border: 1px solid #CCCCCC;
+            width:  15em;
+            height: 12px;
+        }
+        #loginView form ul {
+            margin: 8px 10px 3px 10px;
+        }
+        #loginView form ul li {
+            float: left;
+            width: 80px;
+            height: 18px;
+        }
+        .clear {
+            clear: left;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <div id="logo"></div>
+        <div id="advertisment">此处显示 id "advertisment" 的内容</div>
+        <div id="appendix">
+            <p>收藏本站</p>
+            <p>全站下载</p>
+            <p>联系作者</p>
+        </div>
+    </div>
+
+    <ul id="menu">
+        <li>菜单项一</li>
+        <li>菜单项二</li>
+        <li>菜单项三</li>
+        <li class="lastMenuItem">最后一个菜单项</li>
+    </ul>
+
+    <div id="loginView">
+        <h3>用户登录</h3>
+        <form name="form1" id="form1" method="post" action="">
+            <p>用户名：
+                <input class="textInput" name="userName" type="text" id="userName" />
+            </p>
+            <p>密　码：
+                <input class="textInput" name="password" type="password" id="password" />
+            </p>
+            <ul>
+                <li>忘记密码？</li>
+                <li>新用户注册</li>
+                <li><input type="checkbox" name="checkbox" value="checkbox" />记住我</li>
+            </ul>
+            <p class="clear">
+                <input type="submit" name="Submit" value="登　录" />
+            </p>
+        </form>
+    </div>
+    <div id="catalog">此处显示 id "catalog" 的内容</div>
+    <div id="search">此处显示 id "search" 的内容</div>
+    <div id="newTopics">此处显示 id "newTopics" 的内容</div>
+    <div id="newReply">此处显示 id "newReply" 的内容</div>
+    <div id="hotTopics">此处显示 id "hotTopics" 的内容</div>
+    <div id="statistics">此处显示 id "statistics" 的内容</div>
+    <div id="hotGroups">此处显示 id "hotGroups" 的内容</div>
+    <div id="hotUsers">此处显示 id "hotUsers" 的内容</div>
+    <div id="footer">此处显示 id "footer" 的内容</div>
+</body>
+</html>
