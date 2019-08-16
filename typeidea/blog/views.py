@@ -8,6 +8,9 @@ from comment.forms import CommentForm
 from comment.models import Comment
 
 # Create your views here.
+# update 1
+# update 2
+# update 3
 def post_list(request, category_id=None, tag_id=None):
     # content = 'post_list category_id={category_id}, tag_id={tag_id}'.format(
     #     category_id=category_id,
