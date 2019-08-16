@@ -11,6 +11,7 @@ from comment.models import Comment
 # update 1
 # update 2
 # update 3
+# update 4
 def post_list(request, category_id=None, tag_id=None):
     # content = 'post_list category_id={category_id}, tag_id={tag_id}'.format(
     #     category_id=category_id,
